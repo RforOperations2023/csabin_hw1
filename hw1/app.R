@@ -12,6 +12,7 @@
     library(readr)
     library(dplyr)
     library(ggplot2)
+    library(scales)
     
     
     # Load data 
@@ -58,7 +59,8 @@ ui <- fluidPage(
             
         #### MAIN PANEL ####
         mainPanel(
-           plotOutput("annual_emissions")
+           plotOutput("annual_emissions"),
+           plotOutput("annual_consumption")
         )
     )
 )
@@ -67,11 +69,25 @@ ui <- fluidPage(
     
 server <- function(input, output) {
 
-      # Create a scatterplot of total annual emissions  
+      # Create a scatterplot of total annual emissions (in tons)
       output$annual_emissions <- renderPlot({
+        ggplot(data = waste_tons, aes(x = year, y = total_emissions)) + 
+          geom_col() + 
+          labs(title ="Annual Greenhouse Gas Emissions in Washington D.C.",
+               x = "Year", y = "Emissions (millions of tons)") + 
+          scale_y_continuous(labels = label_number(scale = 0.000001)) + 
+          theme_classic()
+      })
+      
+      # Create a scatterplot of total annual consumption (in tons)  
+      output$annual_consumption <- renderPlot({
         ggplot(data = waste_tons, aes(x = year, y = total_consumption)) + 
-          geom_col() 
-    })
+          geom_col() +
+          labs(title ="Annual Waste Consumption in Washington D.C.",
+               x = "Year", y = "Waste (millions of tons)") + 
+          scale_y_continuous(labels = label_comma(scale = 0.000001)) + 
+          theme_classic()
+      })
 }
 
     
