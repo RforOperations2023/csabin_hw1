@@ -4,8 +4,24 @@
 ### R Shiny for Operations Management
 ### HW 1: Building a Basic ShinyApp
 
+#### SET-UP ####
 
-library(shiny)
+    # Load libraries
+    library(shiny)
+    library(shinythemes)
+    library(readr)
+    library(dplyr)
+    library(ggplot2)
+    
+    
+    # Load data 
+    GHG_inventory <- read_csv("~/csabin_hw1/hw1/Greenhouse_Gas_Inventory.csv")
+
+    
+#### Data Manipulations ####
+
+
+
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(

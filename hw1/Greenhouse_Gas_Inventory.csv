@@ -1,0 +1,631 @@
+﻿INVENTORY,SECTOR,SOURCE,YEAR,CONSUMPTION_UNITS,CONSUMPTION,GHG_EMISSIONS,OBJECTID
+Government Operations,Buildings & Facilities,Fuel Oil,2006,Gallons,1384554,14226.26466,1
+Government Operations,Buildings & Facilities,Fuel Oil,2007,Gallons,,,2
+Government Operations,Buildings & Facilities,Fuel Oil,2008,Gallons,,,3
+Government Operations,Buildings & Facilities,Fuel Oil,2009,Gallons,600343.19999999,6168.512318,4
+Government Operations,Buildings & Facilities,Fuel Oil,2010,Gallons,338939.60000002,3482.597611,5
+Government Operations,Buildings & Facilities,Fuel Oil,2011,Gallons,77535.8,796.6808493,6
+Government Operations,Buildings & Facilities,Fuel Oil,2012,Gallons,60343.82459529,719.9271954,7
+Government Operations,Buildings & Facilities,Fuel Oil,2013,Gallons,75239.85926955,927.6609335,8
+Government Operations,Buildings & Facilities,Fuel Oil,2014,Gallons,12000,123.29976,9
+Government Operations,Buildings & Facilities,Fuel Oil,2015,Gallons,12000,123.29976,10
+Government Operations,Buildings & Facilities,Fuel Oil,2016,Gallons,,,11
+Government Operations,Buildings & Facilities,Fuel Oil,2017,Gallons,,,12
+Government Operations,Buildings & Facilities,Fuel Oil,2018,Gallons,,,13
+Government Operations,Buildings & Facilities,Fuel Oil,2019,Gallons,220800,2268.7,14
+Government Operations,Buildings & Facilities,Fuel Oil,2020,Gallons,,,15
+Government Operations,Buildings & Facilities,Steam,2006,Thousand lbs,80020,5754.771667,16
+Government Operations,Buildings & Facilities,Steam,2007,Thousand lbs,,,17
+Government Operations,Buildings & Facilities,Steam,2008,Thousand lbs,,,18
+Government Operations,Buildings & Facilities,Steam,2009,Thousand lbs,88982,6527.27461,19
+Government Operations,Buildings & Facilities,Steam,2010,Thousand lbs,82868,6078.78214,20
+Government Operations,Buildings & Facilities,Steam,2011,Thousand lbs,75785,5384.539468,21
+Government Operations,Buildings & Facilities,Steam,2012,Thousand lbs,65352.02904884,4646.3057,22
+Government Operations,Buildings & Facilities,Steam,2013,Thousand lbs,84315.90845581,6037.336565,23
+Government Operations,Buildings & Facilities,Steam,2014,Thousand lbs,70157.5,4984.704463,24
+Government Operations,Buildings & Facilities,Steam,2015,Thousand lbs,60461.324,4295.789211,25
+Government Operations,Buildings & Facilities,Steam,2016,Thousand lbs,57255,4067.97,26
+Government Operations,Buildings & Facilities,Steam,2017,Thousand lbs,52681.40411311,3627,27
+Government Operations,Buildings & Facilities,Steam,2018,Thousand lbs,46535,3947.8,28
+Government Operations,Buildings & Facilities,Steam,2019,Thousand lbs,43268.3874,3074.2,29
+Government Operations,Buildings & Facilities,Steam,2020,Thousand lbs,835.8,59.398,30
+Government Operations,Buildings & Facilities,Grid Loss,2006,kWh,38087871.9967144,19779.31774,31
+Government Operations,Buildings & Facilities,Grid Loss,2007,kWh,,,32
+Government Operations,Buildings & Facilities,Grid Loss,2008,kWh,,,33
+Government Operations,Buildings & Facilities,Grid Loss,2009,kWh,30715962.479878,13265.67444,34
+Government Operations,Buildings & Facilities,Grid Loss,2010,kWh,32729081.6740779,14942.77621,35
+Government Operations,Buildings & Facilities,Grid Loss,2011,kWh,33127583.4097056,15124.716,36
+Government Operations,Buildings & Facilities,Grid Loss,2012,kWh,61571639.5754209,21766.44884,37
+Government Operations,Buildings & Facilities,Grid Loss,2013,kWh,53859253.3435415,22147.99517,38
+Government Operations,Buildings & Facilities,Grid Loss,2014,kWh,27103665.0925192,10949.05305,39
+Government Operations,Buildings & Facilities,Grid Loss,2015,kWh,31900667.6332402,12074.23673,40
+Government Operations,Buildings & Facilities,Grid Loss,2016,kWh,30063333.5511596,10390.82,41
+Government Operations,Buildings & Facilities,Grid Loss,2017,kWh,27243722.8792538,9416.3,42
+Government Operations,Buildings & Facilities,Grid Loss,2018,kWh,27549055.2108514,8994.6,43
+Government Operations,Buildings & Facilities,Grid Loss,2019,kWh,27451453.6806101,8696,44
+Government Operations,Buildings & Facilities,Grid Loss,2020,kWh,26513307.4753884,7880.9,45
+Government Operations,Streetlights & Traffic Signals,Electricity,2006,kWh,87734545,45561.2076,46
+Government Operations,Streetlights & Traffic Signals,Electricity,2007,kWh,,,47
+Government Operations,Streetlights & Traffic Signals,Electricity,2008,kWh,,,48
+Government Operations,Streetlights & Traffic Signals,Electricity,2009,kWh,80004536,34552.52719,49
+Government Operations,Streetlights & Traffic Signals,Electricity,2010,kWh,84707557,38674.04775,50
+Citywide,Buildings & Energy: Non-Residential,Electricity,2006,kWh,9313226155,4836428.2305,51
+Citywide,Buildings & Energy: Non-Residential,Electricity,2007,kWh,,,52
+Citywide,Buildings & Energy: Non-Residential,Electricity,2008,kWh,,,53
+Citywide,Buildings & Energy: Non-Residential,Electricity,2009,kWh,7913680020,3417776.7628,54
+Citywide,Buildings & Energy: Non-Residential,Electricity,2010,kWh,9388006436,4286184.3982,55
+Citywide,Buildings & Energy: Non-Residential,Electricity,2011,kWh,9166753334,4185169.4394,56
+Citywide,Buildings & Energy: Non-Residential,Electricity,2012,kWh,8820779856,3450280.2768,57
+Citywide,Buildings & Energy: Non-Residential,Electricity,2013,kWh,8763938273,3290100,58
+Citywide,Buildings & Energy: Non-Residential,Electricity,2014,kWh,8410238895,3183185.9655,59
+Citywide,Buildings & Energy: Non-Residential,Electricity,2015,kWh,8418221362,3186249.1207,60
+Citywide,Buildings & Energy: Non-Residential,Electricity,2016,kWh,9326987829,3223678.7386,61
+Citywide,Buildings & Energy: Non-Residential,Electricity,2017,kWh,9239449023,3193440,62
+Citywide,Buildings & Energy: Non-Residential,Electricity,2018,kWh,8363428298,2730605,63
+Citywide,Buildings & Energy: Non-Residential,Electricity,2019,kWh,7752612420,2455881,64
+Citywide,Buildings & Energy: Non-Residential,Electricity,2020,kWh,6769405092,2102199,65
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2006,Gallons,15913000,163505.7567,66
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2007,Gallons,,,67
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2008,Gallons,,,68
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2009,Gallons,13267000,136318.1597,69
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2010,Gallons,7694000,79055.69612,70
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2011,Gallons,5607000,57611.81286,71
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2012,Gallons,6243000,64146.70014,72
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2013,Gallons,5319000,55425.50262,73
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2014,Gallons,4886000,50203.5522844,74
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2015,Gallons,5989000,61536.855218,75
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2016,Gallons,6454000,66314.72092,76
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2017,Gallons,3452000,35469,77
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2018,Gallons,4706000,48354,78
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2019,Gallons,3614000,37134,79
+Citywide,Buildings & Energy: Non-Residential,Fuel Oil,2020,Gallons,2943000,30239,80
+Citywide,Buildings & Energy: Non-Residential,Gas,2006,Therms,204204843,1086093.8125,81
+Citywide,Buildings & Energy: Non-Residential,Gas,2007,Therms,,,82
+Citywide,Buildings & Energy: Non-Residential,Gas,2008,Therms,,,83
+Citywide,Buildings & Energy: Non-Residential,Gas,2009,Therms,159463057,848127.91399,84
+Citywide,Buildings & Energy: Non-Residential,Gas,2010,Therms,160626039,854314.1236,85
+Citywide,Buildings & Energy: Non-Residential,Gas,2011,Therms,157573552,838078.9469,86
+Citywide,Buildings & Energy: Non-Residential,Gas,2012,Therms,136697921,727048.1489,87
+Citywide,Buildings & Energy: Non-Residential,Gas,2013,Therms,128961354,685900,88
+Citywide,Buildings & Energy: Non-Residential,Gas,2014,Therms,157085898,835484.8679,89
+Citywide,Buildings & Energy: Non-Residential,Gas,2015,Therms,151953227,808185.856,90
+Citywide,Buildings & Energy: Non-Residential,Gas,2016,Therms,136276753.8,724808.1673,91
+Citywide,Transportation: Transit,Electricity,2011,kWh,259743799,118587.4525,92
+Citywide,Buildings & Energy: Non-Residential,Gas,2017,Therms,166348983.002482,884753,93
+Citywide,Buildings & Energy: Non-Residential,Gas,2018,Therms,180646805.53,960797,94
+Citywide,Buildings & Energy: Non-Residential,Gas,2019,Therms,172195169,919867,95
+Citywide,Buildings & Energy: Non-Residential,Gas,2020,Therms,153508038.46,819275,96
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2006,Gallons,115000,1175.3575,97
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2007,Gallons,,,98
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2008,Gallons,,,99
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2009,Gallons,5000,378.537037,100
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2010,Gallons,4000,40.882,101
+Citywide,Transportation: Transit,Electricity,2012,kWh,258379063,101065.0019,102
+Citywide,Transportation: Transit,Electricity,2013,kWh,352709334,137962,103
+Citywide,Transportation: Transit,Electricity,2014,kWh,353699378,133872,104
+Citywide,Transportation: Transit,Electricity,2015,kWh,361482649,136818,105
+Citywide,Transportation: Transit,Electricity,2016,kWh,339216220,117243,106
+Citywide,Transportation: Transit,Electricity,2017,kWh,352910706,121976,107
+Citywide,Transportation: Transit,Electricity,2018,kWh,361857614,118142.88,108
+Citywide,Transportation: Transit,Electricity,2019,kWh,370776256,117452.3,109
+Citywide,Transportation: Transit,Electricity,2020,kWh,320160899,95164.87,110
+Citywide,Waste,Compost,2006,Tons,,,111
+Citywide,Waste,Compost,2007,Tons,,,112
+Citywide,Waste,Compost,2008,Tons,,,113
+Citywide,Waste,Compost,2009,Tons,,,114
+Citywide,Waste,Compost,2010,Tons,,,115
+Citywide,Waste,Compost,2011,Tons,,,116
+Citywide,Waste,Compost,2012,Tons,,,117
+Citywide,Waste,Compost,2013,Tons,5524,384.63,118
+Citywide,Waste,Compost,2014,Tons,5276,367.357328,119
+Citywide,Waste,Compost,2015,Tons,5283.2,367.8586496,120
+Citywide,Waste,Compost,2016,Tons,3737.75,260.252057,121
+Citywide,Waste,Compost,2017,Tons,4868,338.95,122
+Citywide,Waste,Compost,2018,Tons,20437,1423,123
+Citywide,Waste,Compost,2019,Tons,19720.8,1373.1,124
+Citywide,Waste,Compost,2020,Tons,,1373,125
+Citywide,Waste,Incineration,2006,Tons,,,126
+Citywide,Waste,Incineration,2007,Tons,,,127
+Citywide,Waste,Incineration,2008,Tons,,,128
+Citywide,Waste,Incineration,2009,Tons,217626,75431.34786,129
+Citywide,Waste,Incineration,2010,Tons,224417,77785.17637,130
+Citywide,Waste,Incineration,2011,Tons,226732,78587.57852,131
+Citywide,Waste,Incineration,2012,Tons,212171,73540.59031,132
+Citywide,Waste,Incineration,2013,Tons,206521,71582.24381,133
+Citywide,Waste,Incineration,2014,Tons,193998.65,67241.87208,134
+Citywide,Waste,Incineration,2015,Tons,195865.28,67888.8647,135
+Citywide,Waste,Incineration,2016,Tons,139960.85,48511.83022,136
+Citywide,Waste,Incineration,2017,Tons,16546.76,5735.3,137
+Citywide,Waste,Incineration,2018,Tons,432041.33,149750,138
+Citywide,Waste,Incineration,2019,Tons,437334.8,151585,139
+Citywide,Waste,Incineration,2020,Tons,442629,153420,140
+Citywide,Waste,Landfill,2006,Tons,800000,350481.6,141
+Citywide,Waste,Landfill,2007,Tons,,,142
+Citywide,Waste,Landfill,2008,Tons,,,143
+Citywide,Waste,Landfill,2009,Tons,545974,126265.6053,144
+Citywide,Waste,Landfill,2010,Tons,563011.07017544,130205.696,145
+Citywide,Waste,Landfill,2011,Tons,538523,124542.4371,146
+Citywide,Waste,Landfill,2012,Tons,636513,147204.261,147
+Citywide,Waste,Landfill,2013,Tons,613920,212514,148
+Citywide,Waste,Landfill,2014,Tons,609134.11,188346.0181,149
+Citywide,Waste,Landfill,2015,Tons,652840.78,226083.4756,150
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2011,Gallons,15000,153.3075,151
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2012,Gallons,,,152
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2013,Gallons,1000,10.2205,153
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2014,Gallons,3000,30.6615,154
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2015,Gallons,,,155
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2016,Gallons,14000,143.087,156
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2017,Gallons,1000,10.221,157
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2018,Gallons,0,0,158
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2019,Gallons,0,0,159
+Citywide,Buildings & Energy: Non-Residential,Kerosene,2020,Gallons,11000,112.43,160
+Citywide,Buildings & Energy: Residential,Electricity,2006,kWh,1836662611,953792.6767,161
+Citywide,Buildings & Energy: Residential,Electricity,2007,kWh,,,162
+Citywide,Buildings & Energy: Residential,Electricity,2008,kWh,,,163
+Citywide,Buildings & Energy: Residential,Electricity,2009,kWh,2275888699,982915.5955,164
+Citywide,Buildings & Energy: Residential,Electricity,2010,kWh,1891782070,863711.252,165
+Citywide,Buildings & Energy: Residential,Electricity,2011,kWh,1844708642,842219.4269,166
+Citywide,Buildings & Energy: Residential,Electricity,2012,kWh,1799281788,703795.647,167
+Citywide,Buildings & Energy: Residential,Electricity,2013,kWh,1830231894,715901.8941,168
+Citywide,Buildings & Energy: Residential,Electricity,2014,kWh,1830231894,692733.2497,169
+Citywide,Buildings & Energy: Residential,Electricity,2015,kWh,2251246581,852085.1183,170
+Citywide,Buildings & Energy: Residential,Electricity,2016,kWh,2161793825,747182.9466,171
+Citywide,Buildings & Energy: Residential,Electricity,2017,kWh,1876849101,648697,172
+Citywide,Buildings & Energy: Residential,Electricity,2018,kWh,2584918053,843959,173
+Citywide,Buildings & Energy: Residential,Electricity,2019,kWh,2295977807,727313,174
+Citywide,Buildings & Energy: Residential,Electricity,2020,kWh,2470432911,734319,175
+Citywide,Buildings & Energy: Residential,Fuel Oil,2006,Gallons,7453000,76579.42594,176
+Citywide,Buildings & Energy: Residential,Fuel Oil,2007,Gallons,,,177
+Citywide,Buildings & Energy: Residential,Fuel Oil,2008,Gallons,,,178
+Citywide,Buildings & Energy: Residential,Fuel Oil,2009,Gallons,7174000,73712.70652,179
+Citywide,Buildings & Energy: Residential,Fuel Oil,2010,Gallons,8501000,87347.60498,180
+Citywide,Buildings & Energy: Residential,Fuel Oil,2011,Gallons,1430000,14693.2214,181
+Citywide,Buildings & Energy: Residential,Fuel Oil,2012,Gallons,6997000,78634.42194,182
+Citywide,Buildings & Energy: Residential,Fuel Oil,2013,Gallons,5927000,60899.80646,183
+Citywide,Buildings & Energy: Residential,Fuel Oil,2014,Gallons,5744000,59019.48512,184
+Citywide,Buildings & Energy: Residential,Fuel Oil,2015,Gallons,7776000,79898.24448,185
+Citywide,Buildings & Energy: Residential,Fuel Oil,2016,Gallons,805000,8271.3589,186
+Citywide,Buildings & Energy: Residential,Fuel Oil,2017,Gallons,688000,7069.2,187
+Citywide,Buildings & Energy: Residential,Fuel Oil,2018,Gallons,4981000,51180,188
+Citywide,Buildings & Energy: Residential,Fuel Oil,2019,Gallons,372000,3822.3,189
+Citywide,Buildings & Energy: Residential,Fuel Oil,2020,Gallons,293000,3010.6,190
+Citywide,Buildings & Energy: Residential,Gas,2006,Therms,117083476,622726,191
+Citywide,Buildings & Energy: Residential,Gas,2007,Therms,,,192
+Citywide,Buildings & Energy: Residential,Gas,2008,Therms,,,193
+Citywide,Buildings & Energy: Residential,Gas,2009,Therms,129427185,688378,194
+Citywide,Buildings & Energy: Residential,Gas,2010,Therms,129597931,689286,195
+Citywide,Buildings & Energy: Residential,Gas,2011,Therms,127964888,680600,196
+Citywide,Buildings & Energy: Residential,Gas,2012,Therms,104670680,556707,197
+Citywide,Buildings & Energy: Residential,Gas,2013,Therms,152241343,809718,198
+Citywide,Buildings & Energy: Residential,Gas,2014,Therms,139661508,742811,199
+Citywide,Buildings & Energy: Residential,Gas,2015,Therms,131850947,701269,200
+Citywide,Buildings & Energy: Residential,Gas,2016,Therms,111379665.69,592389,201
+Government Operations,Streetlights & Traffic Signals,Electricity,2011,kWh,84180622,38433.47052,202
+Citywide,Buildings & Energy: Residential,Gas,2017,Therms,116171815,617877,203
+Government Operations,Streetlights & Traffic Signals,Electricity,2012,kWh,83884151,32811.59223,204
+Citywide,Buildings & Energy: Residential,Gas,2018,Therms,134151477.67,713505,205
+Government Operations,Streetlights & Traffic Signals,Electricity,2013,kWh,87933183,34407.3456685,206
+Citywide,Buildings & Energy: Residential,Gas,2019,Therms,122308440,650516,207
+Government Operations,Streetlights & Traffic Signals,Electricity,2014,kWh,88684857,33566.75697,208
+Citywide,Buildings & Energy: Residential,Gas,2020,Therms,109428716,582013,209
+Government Operations,Streetlights & Traffic Signals,Electricity,2015,kWh,88047617,33325.56495,210
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2006,Therms,321288319,55741.94204,211
+Government Operations,Streetlights & Traffic Signals,Electricity,2016,kWh,89074959,30787.06654,212
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2007,Therms,,,213
+Government Operations,Streetlights & Traffic Signals,Electricity,2017,kWh,101378573,35040,214
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2008,Therms,,,215
+Government Operations,Streetlights & Traffic Signals,Electricity,2018,kWh,86164157,28132,216
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2009,Therms,288890242,50121.03514,217
+Government Operations,Streetlights & Traffic Signals,Electricity,2019,kWh,101814668,32253,218
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2010,Therms,290223970,50352.43038,219
+Government Operations,Streetlights & Traffic Signals,Electricity,2020,kWh,104806413.55,31153,220
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2011,Therms,285538440,49539.51399,221
+Government Operations,Fleet: DC Circulator,Diesel,2006,VMT,,,222
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2012,Therms,241368601,41876.26431,223
+Government Operations,Fleet: DC Circulator,Diesel,2007,VMT,,,224
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2013,Therms,281202697,43562,225
+Government Operations,Fleet: DC Circulator,Diesel,2008,VMT,,,226
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2014,Therms,296747406,81959.5575,227
+Government Operations,Fleet: DC Circulator,Diesel,2009,VMT,,,228
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2015,Therms,283804174,91902.4002,229
+Government Operations,Fleet: DC Circulator,Diesel,2010,VMT,,,230
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2016,Therms,247656419.49,90278.1654,231
+Government Operations,Fleet: DC Circulator,Diesel,2011,VMT,,,232
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2017,Therms,282520798.002482,94429,233
+Government Operations,Fleet: DC Circulator,Diesel,2012,VMT,,,234
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2018,Therms,314798283.2,105136,235
+Government Operations,Fleet: DC Circulator,Diesel,2013,VMT,,,236
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2019,Therms,294503609,99247,237
+Government Operations,Fleet: DC Circulator,Diesel,2014,VMT,,,238
+Citywide,Fugitive Emissions,Fossil Gas Distribution,2020,Therms,262936754.46,88560,239
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2006,kWh,602658864.498417,312965.2708,240
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2007,kWh,,,241
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2008,kWh,,,242
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2009,kWh,460576177.17567,198914.6076,243
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2010,kWh,546381974.629432,249455.932,244
+Government Operations,Fleet: DC Circulator,Diesel,2015,VMT,1328865,4810.473568,245
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2011,kWh,533505009.92917,243576.8458,246
+Government Operations,Fleet: DC Circulator,Diesel,2016,VMT,1420925,4584.840295,247
+Government Operations,Fleet: DC Circulator,Diesel,2017,VMT,435454.07,4446,248
+Government Operations,Fleet: DC Circulator,Diesel,2018,VMT,396401,4047.3,249
+Government Operations,Fleet: DC Circulator,Diesel,2019,VMT,255399.7,2608.2,250
+Government Operations,Fleet: DC Circulator,Diesel,2020,VMT,265267.64,2708.8,251
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2006,kWh,,,252
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2007,kWh,,,253
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2008,kWh,,,254
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2009,kWh,,,255
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2010,kWh,,,256
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2011,kWh,,,257
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2012,kWh,,,258
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2013,kWh,,,259
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2014,kWh,,,260
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2015,kWh,,,261
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2016,kWh,2705000,934.93,262
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2017,kWh,5386000,1861.6,263
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2018,kWh,1843285,601.8,264
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2019,kWh,1404877,445.03,265
+Government Operations,Fleet: DC Circulator & DC Streetcar Electricity,Electricity,2020,kWh,2285715,679.41,266
+Government Operations,Fleet: On-Road,CNG ,2006,GGE,69076,453.5632296,267
+Government Operations,Fleet: On-Road,CNG ,2007,GGE,,,268
+Government Operations,Fleet: On-Road,CNG ,2008,GGE,,,269
+Government Operations,Fleet: On-Road,CNG ,2009,GGE,79882,524.9669711,270
+Government Operations,Fleet: On-Road,CNG ,2010,GGE,66208,435.0988991,271
+Government Operations,Fleet: On-Road,CNG ,2011,GGE,62394.53,410.2898265,272
+Government Operations,Fleet: On-Road,CNG ,2012,GGE,62171.59,452.4028297,273
+Government Operations,Fleet: On-Road,CNG ,2013,GGE,67567.555,520,274
+Government Operations,Fleet: On-Road,CNG ,2014,GGE,61352.68,435.5652626,275
+Government Operations,Fleet: On-Road,CNG ,2015,GGE,70155.12,492.0148152,276
+Citywide,Transportation: Transit,Grid Loss,2006,kWh,12131127.8265841,8490.11541,277
+Citywide,Transportation: Transit,Grid Loss,2007,kWh,,,278
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2012,kWh,808865512.839786,316390.7014,279
+Citywide,Transportation: Transit,Grid Loss,2008,kWh,,,280
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2013,kWh,803650023.069929,301701,281
+Citywide,Transportation: Transit,Grid Loss,2009,kWh,15581492.8322063,6729.284139,282
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2014,kWh,417995894.453583,158207,283
+Citywide,Transportation: Transit,Grid Loss,2010,kWh,15136762.5433847,6877.675167,284
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2015,kWh,418386707.919864,158357,285
+Citywide,Transportation: Transit,Grid Loss,2011,kWh,15117225.585763,6901.852048,286
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2016,kWh,418784139.422985,144744,287
+Citywide,Transportation: Transit,Grid Loss,2012,kWh,23693574.0864161,9267.744384,288
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2017,kWh,414849941.806596,143385,289
+Citywide,Transportation: Transit,Grid Loss,2013,kWh,32343150.8997695,12651,290
+Citywide,Transportation: Transit,Grid Loss,2014,kWh,17579021.8381962,6653.5,291
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2018,kWh,408136758.858089,133254,292
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2019,kWh,395377137.72783,125248,293
+Citywide,Buildings & Energy: Non-Residential,Grid Loss,2020,kWh,403317882.352154,125248,294
+Citywide,Buildings & Energy: Residential,Grid Loss,2006,kWh,11604435.0331947,61719.92411,295
+Citywide,Buildings & Energy: Residential,Grid Loss,2007,kWh,,,296
+Citywide,Buildings & Energy: Residential,Grid Loss,2008,kWh,,,297
+Citywide,Transportation: Transit,Grid Loss,2015,kWh,17965807.60525,6799.9,298
+Citywide,Buildings & Energy: Residential,Grid Loss,2009,kWh,110157637.21859,57205.68766,299
+Citywide,Transportation: Transit,Grid Loss,2016,kWh,15230198.6649949,5264,300
+Citywide,Buildings & Energy: Residential,Grid Loss,2010,kWh,116392864.219258,50267.99487,301
+Citywide,Transportation: Transit,Grid Loss,2017,kWh,15845915.2179183,5476.8,302
+Citywide,Buildings & Energy: Residential,Grid Loss,2011,kWh,107362042.95609,49017.17064,303
+Citywide,Transportation: Transit,Grid Loss,2018,kWh,17658735.6576681,5765.4,304
+Citywide,Buildings & Energy: Residential,Grid Loss,2012,kWh,141357364.540059,64538.06083,305
+Citywide,Transportation: Transit,Grid Loss,2019,kWh,18909376.6017353,5990,306
+Citywide,Buildings & Energy: Residential,Grid Loss,2013,kWh,167832264.689087,65648.20369,307
+Citywide,Transportation: Transit,Grid Loss,2020,kWh,16968735.8620487,5043.8,308
+Citywide,Buildings & Energy: Residential,Grid Loss,2014,kWh,88018716.1880915,34428.84251,309
+Citywide,Transportation,Diesel,2006,VMT,204631483,412363.8812,310
+Citywide,Buildings & Energy: Residential,Grid Loss,2015,kWh,111886811.348588,42348.57598,311
+Citywide,Transportation,Diesel,2007,VMT,,,312
+Citywide,Buildings & Energy: Residential,Grid Loss,2016,kWh,88124396.2131353,33354.62548,313
+Citywide,Transportation,Diesel,2008,VMT,,,314
+Citywide,Buildings & Energy: Residential,Grid Loss,2017,kWh,84271956.4563132,29127,315
+Citywide,Transportation,Diesel,2009,VMT,203683447,375233.7207,316
+Citywide,Buildings & Energy: Residential,Grid Loss,2018,kWh,119158914.29232,41185,317
+Citywide,Transportation,Diesel,2010,VMT,202756020,375640.651,318
+Citywide,Buildings & Energy: Residential,Grid Loss,2019,kWh,108709660.605704,35493,319
+Citywide,Transportation,Diesel,2011,VMT,201457623,373255.3036,320
+Citywide,Buildings & Energy: Residential,Grid Loss,2020,kWh,122859292.038824,38919,321
+Citywide,Transportation,Diesel,2012,VMT,93155380,93528.49119,322
+Citywide,Transportation,Diesel,2013,VMT,93443671,93796.82243,323
+Citywide,Transportation,Diesel,2014,VMT,88911691,103568.6231,324
+Citywide,Transportation,Diesel,2015,VMT,96639095,114421.8797,325
+Citywide,Transportation,Diesel,2016,VMT,89531814,75891.50198,326
+Citywide,Transportation,Diesel,2017,VMT,90272610.0597194,134551,327
+Citywide,Transportation,Diesel,2018,VMT,90290802,132643.8,328
+Citywide,Transportation,Diesel,2019,VMT,90414149.8927599,130219.8,329
+Citywide,Transportation,Diesel,2020,VMT,86656133.713026,133769.7,330
+Citywide,Transportation,Gasoline,2006,VMT,3211586924,1359635.835,331
+Citywide,Transportation,Gasoline,2007,VMT,,,332
+Citywide,Transportation,Gasoline,2008,VMT,,,333
+Citywide,Transportation,Gasoline,2009,VMT,3196707983,1399207.862,334
+Citywide,Transportation,Gasoline,2010,VMT,3182152499,1397469.945,335
+Citywide,Transportation,Gasoline,2011,VMT,3161774820,1395079.815,336
+Citywide,Transportation,Gasoline,2012,VMT,3454548362,1534911.256,337
+Citywide,Transportation,Gasoline,2013,VMT,3465239274,1389025.278,338
+Citywide,Transportation,Gasoline,2014,VMT,3559816308,1426989.154,339
+Citywide,Transportation,Gasoline,2015,VMT,3527723898,1393535.708,340
+Citywide,Transportation,Gasoline,2016,VMT,3554410185.74228,1401421.528,341
+Citywide,Transportation,Gasoline,2017,VMT,3574244389.94028,1400756,342
+Citywide,Transportation,Gasoline,2018,VMT,3633257198,1414385,343
+Citywide,Transportation,Gasoline,2019,VMT,3648374326.10724,1450537,344
+Citywide,Transportation,Gasoline,2020,VMT,2756650866.28697,1060769,345
+Citywide,Transportation: Transit,Electricity,2006,kWh,252649007,176819.4399,346
+Citywide,Transportation: Transit,Electricity,2007,kWh,,,347
+Citywide,Transportation: Transit,Electricity,2008,kWh,,,348
+Citywide,Transportation: Transit,Electricity,2009,kWh,267719913,115622,349
+Citywide,Transportation: Transit,Electricity,2010,kWh,258833928,117606.1046,350
+Citywide,Waste,Landfill,2016,Tons,705452.11,241683.6602,351
+Citywide,Waste,Landfill,2017,Tons,805957.4,274427,352
+Citywide,Waste,Landfill,2018,Tons,449675.67,226050,353
+Citywide,Waste,Landfill,2019,Tons,455185.2,228811,354
+Citywide,Waste,Landfill,2020,Tons,460695,300919,355
+Citywide,Water & Wastewater,Process Emissions,2006,N/A,,8165,356
+Citywide,Water & Wastewater,Process Emissions,2007,N/A,,,357
+Citywide,Water & Wastewater,Process Emissions,2008,N/A,,,358
+Citywide,Water & Wastewater,Process Emissions,2009,N/A,,15356,359
+Citywide,Water & Wastewater,Process Emissions,2010,N/A,,18075,360
+Citywide,Water & Wastewater,Process Emissions,2011,N/A,,17417,361
+Citywide,Water & Wastewater,Process Emissions,2012,N/A,,21462,362
+Citywide,Water & Wastewater,Process Emissions,2013,N/A,,21925,363
+Citywide,Water & Wastewater,Process Emissions,2014,N/A,,23091,364
+Citywide,Water & Wastewater,Process Emissions,2015,N/A,,30427,365
+Citywide,Water & Wastewater,Process Emissions,2016,N/A,,35913,366
+Citywide,Water & Wastewater,Process Emissions,2017,N/A,,33087,367
+Citywide,Water & Wastewater,Process Emissions,2018,N/A,,33065,368
+Citywide,Water & Wastewater,Process Emissions,2019,N/A,,29960.5,369
+Citywide,Water & Wastewater,Process Emissions,2020,N/A,,22592,370
+Government Operations,Buildings & Facilities,Gas,2006,Therms,21460212.9,114139.3619,371
+Government Operations,Buildings & Facilities,Gas,2007,Therms,,,372
+Government Operations,Buildings & Facilities,Gas,2008,Therms,,,373
+Government Operations,Buildings & Facilities,Gas,2009,Therms,23165471.1897869,123209.0323,374
+Government Operations,Buildings & Facilities,Gas,2010,Therms,18273672.8595686,97191.27016,375
+Government Operations,Buildings & Facilities,Gas,2011,Therms,11947782.6133298,78935.31858,376
+Government Operations,Buildings & Facilities,Gas,2012,Therms,11880035.6133298,66225.30876,377
+Government Operations,Buildings & Facilities,Gas,2013,Therms,14525990.442445,81098.46672,378
+Government Operations,Buildings & Facilities,Gas,2014,Therms,15119930.4,81354.62035,379
+Government Operations,Buildings & Facilities,Gas,2015,Therms,17747685,94393.72483,380
+Government Operations,Buildings & Facilities,Gas,2016,Therms,15874936.924,82115.69,381
+Government Operations,Buildings & Facilities,Gas,2017,Therms,15031604,79948,382
+Government Operations,Buildings & Facilities,Gas,2018,Therms,16800786,89357.8,383
+Government Operations,Buildings & Facilities,Gas,2019,Therms,15710495.1544668,83559,384
+Government Operations,Buildings & Facilities,Gas,2020,Therms,10793672.4566452,57408.2,385
+Government Operations,Buildings & Facilities,Electricity,2006,kWh,500858748.212121,260099.7064,386
+Government Operations,Buildings & Facilities,Electricity,2007,kWh,,,387
+Government Operations,Buildings & Facilities,Electricity,2008,kWh,,,388
+Government Operations,Buildings & Facilities,Electricity,2009,kWh,447761142.255255,193380.0233,389
+Government Operations,Buildings & Facilities,Electricity,2010,kWh,477647798.271909,218074.6844,390
+Government Operations,Buildings & Facilities,Electricity,2011,kWh,485021842,221441.3748,391
+Government Operations,Buildings & Facilities,Electricity,2012,kWh,522951172.175539,184870.6647,392
+Government Operations,Buildings & Facilities,Electricity,2013,kWh,529539418.861887,217757.1311,393
+Government Operations,Buildings & Facilities,Electricity,2014,kWh,493365094,199304.4324,394
+Government Operations,Buildings & Facilities,Electricity,2015,kWh,556732344,210720.2957,395
+Government Operations,Buildings & Facilities,Electricity,2016,kWh,556402494.9,192309.95,396
+Government Operations,Buildings & Facilities,Electricity,2017,kWh,526221666,181879,397
+Government Operations,Buildings & Facilities,Electricity,2018,kWh,522380881,170554.2,398
+Government Operations,Buildings & Facilities,Electricity,2019,kWh,542649199.2,171899,399
+Government Operations,Buildings & Facilities,Electricity,2020,kWh,500249313.45,148695.7,400
+Government Operations,Water & Wastewater,Process Emissions,2010,Metric Tons,,18075,401
+Government Operations,Fleet: On-Road,Gasoline,2014,Gallons,2705944.45,23888.60593,402
+Government Operations,Water & Wastewater,Process Emissions,2011,Metric Tons,,17344,403
+Government Operations,Water & Wastewater,Process Emissions,2012,Metric Tons,,21351.71609,404
+Government Operations,Water & Wastewater,Process Emissions,2013,Metric Tons,,21925.12903,405
+Government Operations,Water & Wastewater,Process Emissions,2014,Metric Tons,,24241.14125,406
+Government Operations,Fleet: On-Road,Gasoline,2015,Gallons,2825562.71,24943.6121,407
+Government Operations,Water & Wastewater,Process Emissions,2015,Metric Tons,,31032.17994,408
+Government Operations,Fleet: On-Road,Gasoline,2016,Gallons,2817272.2,24960.6053,409
+Government Operations,Water & Wastewater,Process Emissions,2016,Metric Tons,,31422,410
+Government Operations,Fleet: On-Road,Gasoline,2017,Gallons,2879633,23037,411
+Government Operations,Water & Wastewater,Process Emissions,2017,Metric Tons,,33086.8,412
+Government Operations,Fleet: On-Road,Gasoline,2018,Gallons,2982438,26282,413
+Government Operations,Water & Wastewater,Process Emissions,2018,Metric Tons,,33065,414
+Government Operations,Fleet: On-Road,Gasoline,2019,Gallons,2888735,22954,415
+Government Operations,Water & Wastewater,Process Emissions,2019,Metric Tons,,29960.5,416
+Government Operations,Fleet: On-Road,Gasoline,2020,Gallons,2158349,19024,417
+Government Operations,Water & Wastewater,Process Emissions,2020,Metric Tons,,20183,418
+Government Operations,Solid Waste,Landfill,2006,Tons,2685,1176.30387,419
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2006,kWh,292514082,9829.756882,420
+Government Operations,Solid Waste,Landfill,2007,Tons,,,421
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2007,kWh,,,422
+Government Operations,Solid Waste,Landfill,2008,Tons,,,423
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2008,kWh,,,424
+Government Operations,Solid Waste,Landfill,2009,Tons,331.1,217.176602,425
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2009,kWh,266186702,6690.746055,426
+Government Operations,Solid Waste,Landfill,2010,Tons,336,220.390632,427
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2010,kWh,243322646,6465.512975,428
+Government Operations,Solid Waste,Landfill,2011,Tons,962,630.999369,429
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2011,kWh,230471425,6124.033308,430
+Government Operations,Solid Waste,Landfill,2012,Tons,931.75113353,611.321634,431
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2012,kWh,254559976.6,9130.75839,432
+Government Operations,Solid Waste,Landfill,2013,Tons,952.45151644,624.440124,433
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2013,kWh,261075794.7,9364.472898,434
+Government Operations,Solid Waste,Landfill,2014,Tons,5555.4,2011.393679,435
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2014,kWh,273469830.728966,5144.29334,436
+Government Operations,Solid Waste,Landfill,2015,Tons,7948.4,2877.805652,437
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2015,kWh,234351392.762195,4408.428915,438
+Government Operations,Solid Waste,Landfill,2016,Tons,12089.3,4415.906968,439
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2016,kWh,190974277,2963.697643,440
+Government Operations,Solid Waste,Landfill,2017,Tons,16016.56,5947,441
+Government Operations,Solid Waste,Landfill,2018,Tons,8275,4216,442
+Government Operations,Fugitive Emissions,Fugitive Emissions,2012,Metric Tons,,3616,443
+Government Operations,Fleet: On-Road,CNG ,2016,GGE,64415.98,29.44088412,444
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2017,kWh,199720220,3099,445
+Government Operations,Solid Waste,Landfill,2019,Tons,8275,4216,446
+Government Operations,Fugitive Emissions,Fugitive Emissions,2013,Metric Tons,,4068,447
+Government Operations,Fleet: On-Road,CNG ,2017,GGE,57958,25.431,448
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2018,kWh,,3426.1,449
+Government Operations,Solid Waste,Landfill,2020,Tons,8275,4216,450
+Government Operations,Fugitive Emissions,Fugitive Emissions,2014,Metric Tons,,7259,451
+Government Operations,Fleet: On-Road,CNG ,2018,GGE,55618,24,452
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2019,kWh,,3382.4,453
+Government Operations,Solid Waste,Incineration,2006,Tons,,,454
+Government Operations,Fugitive Emissions,Fugitive Emissions,2015,Metric Tons,,8151,455
+Government Operations,Fleet: On-Road,CNG ,2019,GGE,49511,22.291,456
+Government Operations,Grid Loss: Water & Wastewater,Electricity,2020,kWh,,3430.1,457
+Government Operations,Solid Waste,Incineration,2007,Tons,,,458
+Government Operations,Fugitive Emissions,Fugitive Emissions,2016,Metric Tons,,7498,459
+Government Operations,Fleet: On-Road,CNG ,2020,GGE,32428,14.071,460
+Government Operations,Employee Commute,Gasoline,2006,VMT,76754134,32734,461
+Government Operations,Solid Waste,Incineration,2008,Tons,,,462
+Government Operations,Fugitive Emissions,Fugitive Emissions,2017,Metric Tons,,6930,463
+Government Operations,Fleet: On-Road,Diesel,2006,Gallons,2029139.57790698,20631.26,464
+Government Operations,Employee Commute,Gasoline,2007,VMT,,,465
+Government Operations,Solid Waste,Incineration,2009,Tons,2979.9,1032.86736,466
+Government Operations,Fugitive Emissions,Fugitive Emissions,2018,Metric Tons,,7616,467
+Government Operations,Fleet: On-Road,Diesel,2007,Gallons,,,468
+Government Operations,Employee Commute,Gasoline,2008,VMT,,,469
+Government Operations,Solid Waste,Incineration,2010,Tons,3024,1011,470
+Government Operations,Fugitive Emissions,Fugitive Emissions,2019,Metric Tons,,7065,471
+Government Operations,Fleet: On-Road,Diesel,2008,Gallons,,,472
+Government Operations,Employee Commute,Gasoline,2009,VMT,75127148,28705.03295,473
+Government Operations,Solid Waste,Incineration,2011,Tons,8658.9,3001,474
+Government Operations,Fugitive Emissions,Fugitive Emissions,2020,Metric Tons,,5245,475
+Government Operations,Fleet: On-Road,Diesel,2009,Gallons,519852,5314.932047,476
+Government Operations,Employee Commute,Gasoline,2010,VMT,74714166,28769.14046,477
+Government Operations,Solid Waste,Incineration,2012,Tons,8385.76020179,2906,478
+Government Operations,Water & Wastewater,Electricity,2006,kWh,292514082,151904.7579,479
+Government Operations,Fleet: On-Road,Diesel,2010,Gallons,1586964,16208.24237,480
+Government Operations,Employee Commute,Gasoline,2011,VMT,74440772,32618.17903,481
+Government Operations,Solid Waste,Incineration,2013,Tons,8572.06364797,2971,482
+Government Operations,Water & Wastewater,Electricity,2007,kWh,,,483
+Government Operations,Fleet: On-Road,Diesel,2011,Gallons,1324693.29,13546,484
+Government Operations,Employee Commute,Gasoline,2012,VMT,70757535,27364.59296,485
+Government Operations,Solid Waste,Incineration,2014,Tons,4648.4,1613.16604,486
+Government Operations,Water & Wastewater,Electricity,2008,kWh,,,487
+Government Operations,Fleet: On-Road,Diesel,2012,Gallons,773609,7902.91709,488
+Government Operations,Employee Commute,Gasoline,2013,VMT,72329530,27972.5424,489
+Government Operations,Solid Waste,Incineration,2015,Tons,9057.4,3139.385414,490
+Government Operations,Water & Wastewater,Electricity,2009,kWh,266186702,114961.2724,491
+Government Operations,Water & Wastewater,Electricity,2010,kWh,243322646,111091.2882,492
+Government Operations,Water & Wastewater,Electricity,2011,kWh,230471425,105223.94,493
+Government Operations,Water & Wastewater,Electricity,2012,kWh,254559976.6,99572.06516,494
+Government Operations,Water & Wastewater,Electricity,2013,kWh,261075794.7,102120.7512,495
+Government Operations,Water & Wastewater,Electricity,2014,kWh,273469830.728966,103506.9081,496
+Government Operations,Water & Wastewater,Electricity,2015,kWh,234351392.762195,88700.7829,497
+Government Operations,Water & Wastewater,Electricity,2016,kWh,190974277,66006.62902,498
+Government Operations,Water & Wastewater,Electricity,2017,kWh,199720220,69029,499
+Government Operations,Water & Wastewater,Electricity,2018,kWh,215035180,70208,500
+Government Operations,Water & Wastewater,Electricity,2019,kWh,209361184.6,66321,501
+Government Operations,Water & Wastewater,Electricity,2020,kWh,217728197,64718,502
+Government Operations,Water & Wastewater,Natural Gas,2006,Therms,526485.23,2800.190669,503
+Government Operations,Water & Wastewater,Natural Gas,2007,Therms,,,504
+Government Operations,Water & Wastewater,Natural Gas,2008,Therms,,,505
+Government Operations,Water & Wastewater,Natural Gas,2009,Therms,575274.37,3059.683028,506
+Government Operations,Water & Wastewater,Natural Gas,2010,Therms,709589.4,3774.057662,507
+Government Operations,Water & Wastewater,Natural Gas,2011,Therms,709589,3774.055535,508
+Government Operations,Water & Wastewater,Natural Gas,2012,Therms,572791.4,3046.47698,509
+Government Operations,Water & Wastewater,Natural Gas,2013,Therms,930667.9,4949.896826,510
+Government Operations,Water & Wastewater,Natural Gas,2014,Therms,679337.72281814,3613.159579,511
+Government Operations,Water & Wastewater,Natural Gas,2015,Therms,1168915.32207743,6217.051478,512
+Government Operations,Water & Wastewater,Natural Gas,2016,Therms,1747826,9296.074755,513
+Government Operations,Water & Wastewater,Natural Gas,2017,Therms,893811,4754,514
+Government Operations,Water & Wastewater,Natural Gas,2018,Therms,940076,4999.9,515
+Government Operations,Water & Wastewater,Natural Gas,2019,Therms,973278.8,5176.5,516
+Government Operations,Water & Wastewater,Natural Gas,2020,Therms,951449.55,5060.4,517
+Government Operations,Water & Wastewater,Fuel Oil,2006,Metric Tons,,,518
+Government Operations,Water & Wastewater,Fuel Oil,2007,Metric Tons,,,519
+Government Operations,Water & Wastewater,Fuel Oil,2008,Metric Tons,,,520
+Government Operations,Water & Wastewater,Fuel Oil,2009,Metric Tons,,,521
+Government Operations,Water & Wastewater,Fuel Oil,2010,Metric Tons,,,522
+Government Operations,Water & Wastewater,Fuel Oil,2011,Metric Tons,,,523
+Government Operations,Water & Wastewater,Fuel Oil,2012,Metric Tons,,,524
+Government Operations,Water & Wastewater,Fuel Oil,2013,Metric Tons,,,525
+Government Operations,Water & Wastewater,Fuel Oil,2014,Metric Tons,,,526
+Government Operations,Water & Wastewater,Fuel Oil,2015,Metric Tons,,,527
+Government Operations,Water & Wastewater,Fuel Oil,2016,Metric Tons,,,528
+Government Operations,Water & Wastewater,Fuel Oil,2017,Metric Tons,,33087,529
+Government Operations,Water & Wastewater,Fuel Oil,2018,Metric Tons,,33086.8,530
+Government Operations,Water & Wastewater,Fuel Oil,2019,Metric Tons,,,531
+Government Operations,Water & Wastewater,Fuel Oil,2020,Metric Tons,,0,532
+Government Operations,Water & Wastewater,Process Emissions,2006,Metric Tons,,8164.65,533
+Government Operations,Water & Wastewater,Process Emissions,2007,Metric Tons,,,534
+Government Operations,Water & Wastewater,Process Emissions,2008,Metric Tons,,,535
+Government Operations,Water & Wastewater,Process Emissions,2009,Metric Tons,,15356,536
+Government Operations,Employee Commute,Gasoline,2014,VMT,74732599,33138,537
+Government Operations,Employee Commute,Gasoline,2015,VMT,76126297,33797.1628,538
+Government Operations,Employee Commute,Gasoline,2016,VMT,84086186,37144.06535,539
+Government Operations,Solid Waste,Incineration,2016,Tons,6908.2,2394.451202,540
+Government Operations,Solid Waste,Incineration,2017,Tons,2318.19,803.44,541
+Government Operations,Solid Waste,Incineration,2018,Tons,7951,2755.9,542
+Government Operations,Employee Commute,Gasoline,2017,VMT,85169708.55,37623,543
+Government Operations,Solid Waste,Incineration,2019,Tons,7951,2755.9,544
+Government Operations,Solid Waste,Incineration,2020,Tons,7951,2755.9,545
+Government Operations,Fleet: On-Road,Diesel,2013,Gallons,520524.53,5318.117749,546
+Government Operations,Employee Commute,Gasoline,2018,VMT,82263294,35850,547
+Government Operations,Solid Waste,Compost,2006,Tons,,,548
+Government Operations,Fleet: On-Road,Diesel,2014,Gallons,326821.88,3337.670679,549
+Government Operations,Employee Commute,Gasoline,2019,VMT,83801984,35982,550
+Government Operations,Solid Waste,Compost,2007,Tons,,,551
+Government Operations,Fleet: On-Road,Diesel,2015,Gallons,276599.88,2825.954681,552
+Government Operations,Employee Commute,Gasoline,2020,VMT,42587074.61,17800,553
+Government Operations,Solid Waste,Compost,2008,Tons,,,554
+Government Operations,Fleet: On-Road,Diesel,2016,Gallons,265532.66,2712.212609,555
+Government Operations,Employee Commute,Electricity,2006,VMT,,,556
+Government Operations,Solid Waste,Compost,2009,Tons,,,557
+Government Operations,Fleet: On-Road,Diesel,2017,Gallons,235430,2404.7,558
+Government Operations,Employee Commute,Electricity,2007,VMT,,,559
+Government Operations,Solid Waste,Compost,2010,Tons,,,560
+Government Operations,Fleet: On-Road,Diesel,2018,Gallons,217808,2224.5,561
+Government Operations,Employee Commute,Electricity,2008,VMT,,,562
+Government Operations,Solid Waste,Compost,2011,Tons,,,563
+Government Operations,Fleet: On-Road,Diesel,2019,Gallons,168494,1721,564
+Government Operations,Employee Commute,Electricity,2009,VMT,1417493,463.3906008,565
+Government Operations,Solid Waste,Compost,2012,Tons,,,566
+Government Operations,Fleet: On-Road,Diesel,2020,Gallons,176276,1800.4,567
+Government Operations,Employee Commute,Electricity,2010,VMT,1409701,465.0047035,568
+Government Operations,Solid Waste,Compost,2013,Tons,,,569
+Government Operations,Fleet: On-Road,Biodiesel,2006,Gallons,,,570
+Government Operations,Employee Commute,Electricity,2011,VMT,1491067,557.5887218,571
+Government Operations,Solid Waste,Compost,2014,Tons,,,572
+Government Operations,Fleet: On-Road,Biodiesel,2007,Gallons,,,573
+Government Operations,Employee Commute,Electricity,2012,VMT,1335048,452.8851464,574
+Government Operations,Solid Waste,Compost,2015,Tons,,,575
+Government Operations,Fleet: On-Road,Biodiesel,2008,Gallons,,,576
+Government Operations,Employee Commute,Electricity,2013,VMT,1364708,462.9466374,577
+Government Operations,Solid Waste,Compost,2016,Tons,,,578
+Government Operations,Fleet: On-Road,Biodiesel,2009,Gallons,,,579
+Government Operations,Employee Commute,Electricity,2014,VMT,1496912,596.4208585,580
+Government Operations,Solid Waste,Compost,2017,Tons,481,33.491,581
+Government Operations,Fleet: On-Road,Biodiesel,2010,Gallons,,,582
+Government Operations,Employee Commute,Electricity,2015,VMT,1436345,562.3146081,583
+Government Operations,Solid Waste,Compost,2018,Tons,314,22,584
+Government Operations,Fleet: On-Road,Biodiesel,2011,Gallons,56854.69,0.65365,585
+Government Operations,Employee Commute,Electricity,2016,VMT,1586531,618.2068376,586
+Government Operations,Solid Waste,Compost,2019,Tons,314,22,587
+Government Operations,Fleet: On-Road,Biodiesel,2012,Gallons,1286965.061,11636.30489,588
+Government Operations,Fleet: On-Road,Biodiesel,2013,Gallons,1153932.12,10263.91673,589
+Government Operations,Fleet: On-Road,Biodiesel,2014,Gallons,1140892.24,9980.736255,590
+Government Operations,Fleet: On-Road,Biodiesel,2015,Gallons,1205676.77,10655.88753,591
+Government Operations,Fleet: On-Road,Biodiesel,2016,Gallons,1162382,10252.2938,592
+Government Operations,Fleet: On-Road,Biodiesel,2017,Gallons,1062814,9284.8,593
+Government Operations,Fleet: On-Road,Biodiesel,2018,Gallons,1068017,9327,594
+Government Operations,Fleet: On-Road,Biodiesel,2019,Gallons,949633,8201.6,595
+Government Operations,Fleet: On-Road,Biodiesel,2020,Gallons,850887,7482.2,596
+Government Operations,Fleet: On-Road,Ethanol,2006,Gallons,78736.3,118.37,597
+Government Operations,Fleet: On-Road,Ethanol,2007,Gallons,,,598
+Government Operations,Fleet: On-Road,Ethanol,2008,Gallons,,,599
+Government Operations,Fleet: On-Road,Ethanol,2009,Gallons,103521,181.4755419,600
+Government Operations,Fleet: On-Road,Ethanol,2010,Gallons,116642,204.2430017,601
+Government Operations,Fleet: On-Road,Ethanol,2011,Gallons,72232.07,126.6266198,602
+Government Operations,Fleet: On-Road,Ethanol,2012,Gallons,235240.213,364.679408,603
+Government Operations,Fleet: On-Road,Ethanol,2013,Gallons,363372.59,558.3855367,604
+Government Operations,Fleet: On-Road,Ethanol,2014,Gallons,369825.34,544.6853849,605
+Government Operations,Fleet: On-Road,Ethanol,2015,Gallons,346241.54,505.9205078,606
+Government Operations,Fleet: On-Road,Ethanol,2016,Gallons,319049.4,476.9081991,607
+Government Operations,Fleet: On-Road,Ethanol,2017,Gallons,285297,426.28,608
+Government Operations,Fleet: On-Road,Ethanol,2018,Gallons,282458,421,609
+Government Operations,Fleet: On-Road,Ethanol,2019,Gallons,273953,407.91,610
+Government Operations,Fleet: On-Road,Ethanol,2020,Gallons,203401.18,302.32,611
+Government Operations,Fleet: On-Road,Gasoline,2006,Gallons,2296050,20539.4,612
+Government Operations,Fleet: On-Road,Gasoline,2007,Gallons,,,613
+Government Operations,Fleet: On-Road,Gasoline,2008,Gallons,,,614
+Government Operations,Fleet: On-Road,Gasoline,2009,Gallons,2475764,22052.68656,615
+Government Operations,Fleet: On-Road,Gasoline,2010,Gallons,2375515.014,21453.41451,616
+Government Operations,Fleet: On-Road,Gasoline,2011,Gallons,2622572.81,23711.27316,617
+Government Operations,Fleet: On-Road,Gasoline,2012,Gallons,2453418.546,21678.16602,618
+Government Operations,Fleet: On-Road,Gasoline,2013,Gallons,2564760.16,22665.27838,619
+Government Operations,Employee Commute,Electricity,2017,VMT,1606975.63,626.17,620
+Government Operations,Solid Waste,Compost,2020,Tons,314,22,621
+Government Operations,Employee Commute,Electricity,2018,VMT,1552138,780,622
+Government Operations,Fugitive Emissions,Fugitive Emissions,2006,Metric Tons,,5422,623
+Government Operations,Employee Commute,Electricity,2019,VMT,1581170,783.44,624
+Government Operations,Fugitive Emissions,Fugitive Emissions,2007,Metric Tons,,,625
+Government Operations,Employee Commute,Electricity,2020,VMT,803529.71,298.38,626
+Government Operations,Fugitive Emissions,Fugitive Emissions,2008,Metric Tons,,,627
+Government Operations,Fugitive Emissions,Fugitive Emissions,2009,Metric Tons,,4971,628
+Government Operations,Fugitive Emissions,Fugitive Emissions,2010,Metric Tons,,4132,629
+Government Operations,Fugitive Emissions,Fugitive Emissions,2011,Metric Tons,,3015,630
