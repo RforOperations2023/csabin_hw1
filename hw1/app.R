@@ -76,7 +76,7 @@ ui <- fluidPage(
     
 server <- function(input, output) {
 
-      # Create a scatterplot of total annual emissions
+      # Create an interactive bar graph (user chooses y-axis: emissions or consumption)
       output$annual_emissions <- renderPlot({
         ggplot(data = waste_tons, aes_string(x = "year", y = input$y)) + 
           geom_col() + 
@@ -85,14 +85,16 @@ server <- function(input, output) {
           theme_classic()
       })
       
-      # Create a scatterplot of total annual consumption 
+      # Create a scatterplot (total annual emissions ~ total annual consumption)
       output$annual_consumption <- renderPlot({
-        ggplot(data = waste_tons, aes(x = year, y = total_consumption)) + 
-          geom_col() +
-          labs(title ="Annual Waste Consumption in Washington D.C.",
-               x = "Year", y = "Waste (millions of tons)") + 
-          scale_y_continuous(labels = label_number(accuracy = .1, scale = 0.000001)) +
-          theme_classic()
+        ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
+          geom_point() + 
+          geom_smooth(method = 'lm', se = FALSE, color = "green") +
+          labs(title ="Relationship between Waste Consumption \n and Greenhouse Gas Emissions",
+               x = "Waste (millions of tons)", y = "Emissions (millions of tons)") + 
+          scale_x_continuous(labels = label_comma(), limits = c(750000,925000)) +
+          scale_y_continuous(labels = label_comma(), limits = c(150000,500000)) +
+          theme_classic() + theme(plot.title = element_text(hjust = 0.5))
       })
 }
 
