@@ -4,7 +4,7 @@
 ### R Shiny for Operations Management
 ### HW 1: Building a Basic ShinyApp
 
-#### SET-UP ####
+#### PROJECT SET-UP ####
 
     # Load libraries
     library(shiny)
@@ -43,41 +43,37 @@
                            total_emissions = sum(emissions, na.rm = TRUE))
 
 
-# Define UI for application that draws a histogram
+#### USER INTERFACE ####
 ui <- fluidPage(
 
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    # Title of application
+    titlePanel("Washington D.C. Citywide Greenhouse Gas Emissions: 2006-2020"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
+          
+          
         ),
-
-        # Show a plot of the generated distribution
+            
+        #### MAIN PANEL ####
         mainPanel(
-           plotOutput("distPlot")
+           plotOutput("annual_emissions")
         )
     )
 )
 
-# Define server logic required to draw a histogram
+#### SERVER ####
+    
 server <- function(input, output) {
 
-    output$distPlot <- renderPlot({
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
+      # Create a scatterplot of total annual emissions  
+      output$annual_emissions <- renderPlot({
+        ggplot(data = waste_tons, aes(x = year, y = total_consumption)) + 
+          geom_col() 
     })
 }
 
-# Run the application 
+    
+#### RUN APPLICATION ####
 shinyApp(ui = ui, server = server)
