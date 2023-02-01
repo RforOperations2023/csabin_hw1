@@ -53,8 +53,8 @@ ui <- fluidPage(
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
-        sidebarPanel("Change the displayed by choosing the following settings: ", 
-                     width = 4,
+        sidebarPanel("Change the displays by manipulating the settings below: ", 
+                     width = 3,
           
           # Input: allow user to choose "emission" or "consumption" for y-axis
           selectInput(inputId = 'y', label = 'Y-Axis:',
@@ -69,10 +69,14 @@ ui <- fluidPage(
             
         #### MAIN PANEL ####
         mainPanel(
-           plotOutput("scatterplot"),
-           plotOutput("annual_wastetons"),
-           DT::dataTableOutput(outputId = "showdata")
+           fluidRow(
+             column(6, plotOutput("scatterplot")),
+             column(6, plotOutput("annual_wastetons"))
+             ),
+           fluidRow(
+             column(12, DT::dataTableOutput(outputId = "showdata"))
            )
+        )
     )
 )
 
@@ -85,9 +89,9 @@ server <- function(input, output) {
           # Reactive graph title
             plot_title <- renderText({ 
               if(input$y == "total_emissions"){
-                plot_title = "Total Annual Greenhouse Gas Emissions from Waste Sources"
+                plot_title = "Total Annual Greenhouse Gas Emissions \n from Waste Sources"
               } else if (input$y == "total_consumption"){
-                plot_title = "Total Annual Waste Consumption in Washington D.C."
+                plot_title = "Total Annual Waste Consumption \n in Washington D.C."
               }
             })
   
@@ -117,7 +121,8 @@ server <- function(input, output) {
                 scale_fill_brewer(palette = "Dark2") +
                 theme_classic() + 
                 theme(axis.text.x = element_text(angle = 90)) + 
-                theme(plot.title = element_text(hjust = 0.5))
+                theme(plot.title = element_text(hjust = 0.5)) + 
+                theme(legend.position = "bottom")
             })
       
             
@@ -125,7 +130,7 @@ server <- function(input, output) {
       output$scatterplot <- renderPlot({
         ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
           geom_point() + 
-          geom_smooth(method = 'lm', se = FALSE, color = "dark blue") +
+          geom_smooth(method = 'lm', se = FALSE, color = "#60A3D9") +
           labs(title ="Relationship between Waste Consumption \n and Greenhouse Gas Emissions",
                x = "Waste (tons)", y = "Emissions (tons)") + 
           scale_x_continuous(labels = label_comma(), limits = c(750000,925000)) +
