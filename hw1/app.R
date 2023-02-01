@@ -113,7 +113,7 @@ server <- function(input, output) {
                 ggtitle(req(plot_title())) +
                 labs(x = "Year", 
                      y = names(y_strings[which(y_strings == input$y)])) +
-                scale_y_continuous(labels = label_number(accuracy = .1, scale = 0.000001)) + 
+                scale_y_continuous(labels = label_comma()) + 
                 scale_fill_brewer(palette = "Dark2") +
                 theme_classic() + 
                 theme(axis.text.x = element_text(angle = 90)) + 
@@ -125,9 +125,9 @@ server <- function(input, output) {
       output$scatterplot <- renderPlot({
         ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
           geom_point() + 
-          geom_smooth(method = 'lm', se = FALSE, color = "green") +
+          geom_smooth(method = 'lm', se = FALSE, color = "dark blue") +
           labs(title ="Relationship between Waste Consumption \n and Greenhouse Gas Emissions",
-               x = "Waste (millions of tons)", y = "Emissions (millions of tons)") + 
+               x = "Waste (tons)", y = "Emissions (tons)") + 
           scale_x_continuous(labels = label_comma(), limits = c(750000,925000)) +
           scale_y_continuous(labels = label_comma(), limits = c(150000,500000)) +
           theme_classic() + theme(plot.title = element_text(hjust = 0.5))
