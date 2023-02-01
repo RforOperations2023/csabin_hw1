@@ -64,7 +64,15 @@ ui <- fluidPage(
   
           # Input: allow user to choose whether or not to show data table
           checkboxInput(inputId = 'c', label = 'Show Data Table',
-                        value = TRUE)
+                        value = TRUE),
+          
+          # Input: allow user to select year for top sector analysis
+          checkboxGroupInput(inputId = "selected_year", label = "Year",
+                             choices = c("2006", "2007", "2008", "2009", "2010",
+                                         "2011", "2012", "2013", "2014", "2015",
+                                         "2016", "2017", "2018", "2019", "2020", 
+                                         "2021", "2022"),
+                             selected = "2022")
         ),
             
         #### MAIN PANEL ####
@@ -79,7 +87,7 @@ ui <- fluidPage(
         )
     )
 )
-
+    
 #### SERVER ####
     
 server <- function(input, output) {
