@@ -58,8 +58,11 @@ ui <- fluidPage(
           selectInput(inputId = 'y', label = 'Y-Axis:',
                       choices = c("Greenhouse Gas Emissions (tons)" = "total_emissions", 
                                   "Waste Consumption (tons)" = "total_consumption"),
-                      selected = "total_emissions")
+                      selected = "total_emissions"),
   
+          # Input: allow user to choose whether or not to show data table
+          checkboxInput(inputId = 'c', label = 'Show Data Table',
+                        value = TRUE)
         ),
             
         #### MAIN PANEL ####
@@ -67,7 +70,10 @@ ui <- fluidPage(
            fluidRow(
              column(6, plotOutput("annual_emissions")),
               column(6, plotOutput("annual_consumption"))
-             )
+             ),
+           fluidRow(
+             column(12, DT::dataTableOutput(outputId = "showdata"))
+           )
         )
     )
 )
@@ -96,6 +102,19 @@ server <- function(input, output) {
           scale_y_continuous(labels = label_comma(), limits = c(150000,500000)) +
           theme_classic() + theme(plot.title = element_text(hjust = 0.5))
       })
+      
+      # Create a data table of waste consumption and emissions
+      waste_display <- data.frame(waste_tons %>%
+                                  select(c(year, source, consumption, emissions)) %>%
+                                  filter(is.na(consumption) == FALSE
+                                         & is.na(emissions) == FALSE))
+      
+      output$showdata <- DT::renderDataTable(
+        if(input$c){DT::datatable(data = waste_display,
+                                  options = list(pageLength = 10),
+                                  rownames = FALSE)
+          }
+      )
 }
 
     
