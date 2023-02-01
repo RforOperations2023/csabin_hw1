@@ -52,7 +52,8 @@ ui <- fluidPage(
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
-        sidebarPanel(
+        sidebarPanel("Change the displayed by choosing the following settings: ", 
+                     width = 4,
           
           # Input: allow user to choose "emission" or "consumption" for y-axis
           selectInput(inputId = 'y', label = 'Y-Axis:',
@@ -67,14 +68,10 @@ ui <- fluidPage(
             
         #### MAIN PANEL ####
         mainPanel(
-           fluidRow(
-             column(6, plotOutput("annual_emissions")),
-              column(6, plotOutput("annual_consumption"))
-             ),
-           fluidRow(
-             column(12, DT::dataTableOutput(outputId = "showdata"))
+           plotOutput("scatterplot"),
+           plotOutput("annual_emissions"),
+           DT::dataTableOutput(outputId = "showdata")
            )
-        )
     )
 )
 
@@ -88,11 +85,12 @@ server <- function(input, output) {
           geom_col() + 
           labs(x = "Year", y = as.character(input$y)) + 
           scale_y_continuous(labels = label_number(accuracy = .1, scale = 0.000001)) + 
-          theme_classic()
+          theme_classic() + 
+          theme(axis.text.x = element_text(angle = 90))
       })
       
       # Create a scatterplot (total annual emissions ~ total annual consumption)
-      output$annual_consumption <- renderPlot({
+      output$scatterplot <- renderPlot({
         ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
           geom_point() + 
           geom_smooth(method = 'lm', se = FALSE, color = "green") +
@@ -103,7 +101,7 @@ server <- function(input, output) {
           theme_classic() + theme(plot.title = element_text(hjust = 0.5))
       })
       
-      # Create a data table of waste consumption and emissions
+      # Create a data table of waste consumption and emissions when Show Data checked
       waste_display <- data.frame(waste_tons %>%
                                   select(c(year, source, consumption, emissions)) %>%
                                   filter(is.na(consumption) == FALSE
