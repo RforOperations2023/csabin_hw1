@@ -83,6 +83,10 @@ ui <- fluidPage(
              ),
            fluidRow(
              column(12, DT::dataTableOutput(outputId = "showdata"))
+           ),
+           fluidRow(
+             column (6, plotOutput("top5emissions")),
+             column (6, plotOutput("top5consumption"))
            )
         )
     )
@@ -154,10 +158,28 @@ server <- function(input, output) {
       
       output$showdata <- DT::renderDataTable(
         if(input$c){DT::datatable(data = waste_display,
-                                  options = list(pageLength = 10),
+                                  options = list(pageLength = 5),
                                   rownames = FALSE)
           }
       )
+      
+      
+      # Create an interactive bar graph showing top 5 emissions sectors in chosen year
+      output$top5emissions <- renderPlot({
+        ggplot(data = inventory2020, aes(x = sector, y = emissions)) + 
+        geom_col() + 
+        theme_classic() + 
+        xlab("Sector") + ylab("Emissions")
+      })
+        
+      # bar chart: sector of consumption 2020
+      output$top5consumption <- renderPlot({
+        ggplot(data = inventory2020, aes(x = sector, y = consumption)) + 
+        geom_col() + 
+        theme_classic() + 
+        xlab("Sector") + ylab("Consumption")
+      })
+      
 }
 
     
