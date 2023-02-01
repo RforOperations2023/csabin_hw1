@@ -164,25 +164,24 @@ server <- function(input, output) {
       )
       
       
-      # Create a reactive data frame that filters by selected year
-          subset_selectedyear <- reactive({
-            req(input$selectedyear)
-            filter(ghg_inventory, year %in% input$selectedyear)
-          })
-      
-          sectorconsumption2020 <- ghg_inventory %>% 
-            select (year, sector, source, consumption) %>% 
-            filter(year == '2020') %>%
-            group_by(sector, year) %>%
-            mutate(sector_consumption = sum(consumption, na.rm = TRUE)) %>%
-            arrange(desc(sector_consumption)) %>% 
-            select (year, sector, sector_consumption)
+      # Create a reactive data frame for *consumption* that filters by selected year
+          sectorconsumption_selectedyear <- reactive({
+              req(input$selected_year)
+              ghg_inventory %>% 
+                  select (year, sector, source, consumption) %>% 
+                  filter(year %in% input$selected_year)
+#              %>%
+#                  group_by(sector, year) %>%
+#                  mutate(sector_consumption = sum(consumption, na.rm = TRUE)) %>%
+#                  arrange(desc(sector_consumption)) %>% 
+#                  select (year, sector, sector_consumption)
+            })
+            
+#          consumption_selectedyear <- data.frame(unique(sectorconsumption_selectedyear))
           
-          consumption2020 <- data.frame(unique(sectorconsumption2020))
-          
-          top5consumption <- consumption2020 %>%
-            arrange(desc(sector_consumption)) %>%
-            top_n(sector_consumption, n = 5)
+#          top5consumption <- consumption_selectedyear %>%
+#            arrange(desc(sector_consumption)) %>%
+#            top_n(sector_consumption, n = 5)
           
           
           
