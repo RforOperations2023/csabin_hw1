@@ -80,15 +80,33 @@ ui <- fluidPage(
 server <- function(input, output) {
 
       # Create an interactive bar graph (user chooses y-axis: emissions or consumption)
-      output$annual_emissions <- renderPlot({
-        ggplot(data = waste_tons, aes_string(x = "year", y = input$y)) + 
-          geom_col() + 
-          labs(x = "Year", y = as.character(input$y)) + 
-          scale_y_continuous(labels = label_number(accuracy = .1, scale = 0.000001)) + 
-          theme_classic() + 
-          theme(axis.text.x = element_text(angle = 90))
-      })
+        
+          # Reactive y-axis label
+            yaxis_title <- reactive({
+              req(input$y)
+              if (input$y == "total_emissions"){
+                yaxis_title <- "Greenhouse Gas Emissions (tons)"
+              } else if(input$y == "total_consumption"){
+                yaxis_title <- "Waste Consumption (tons)"
+              }
+            })
+        
+          # Character Strings matching yaxis_title
+            y_strings <- c("Greenhouse Gas Emissions (tons)" = "total_emissions",
+                           "Waste Consumption (tons)" = "total_consumption")
+  
+          # Plot
+            output$annual_emissions <- renderPlot({
+              ggplot(data = waste_tons, aes_string(x = "year", y = input$y)) + 
+                geom_col() + 
+                labs(x = "Year", 
+                     y = names(y_strings[which(y_strings == input$y)])) +
+                scale_y_continuous(labels = label_number(accuracy = .1, scale = 0.000001)) + 
+                theme_classic() + 
+                theme(axis.text.x = element_text(angle = 90))
+            })
       
+            
       # Create a scatterplot (total annual emissions ~ total annual consumption)
       output$scatterplot <- renderPlot({
         ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
