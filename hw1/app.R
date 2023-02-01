@@ -164,22 +164,29 @@ server <- function(input, output) {
       )
       
       
-      # Create an interactive bar graph showing top 5 emissions sectors in chosen year
-      output$top5emissions <- renderPlot({
-        ggplot(data = inventory2020, aes(x = sector, y = emissions)) + 
-        geom_col() + 
-        theme_classic() + 
-        xlab("Sector") + ylab("Emissions")
-      })
-        
-      # bar chart: sector of consumption 2020
-      output$top5consumption <- renderPlot({
-        ggplot(data = inventory2020, aes(x = sector, y = consumption)) + 
-        geom_col() + 
-        theme_classic() + 
-        xlab("Sector") + ylab("Consumption")
-      })
       
+      # Create a reactive data frame that filters by selected year
+          subset_selectedyear <- reactive({
+            req(input$selectedyear)
+            filter(ghg_inventory, year %in% input$selectedyear)
+          })
+      
+          # Create an interactive bar graph showing top 5 emissions sectors in chosen year
+          output$top5emissions <- renderPlot({
+            ggplot(data = inventory2020, aes(x = sector, y = emissions)) + 
+            geom_col() + 
+            theme_classic() + 
+            xlab("Sector") + ylab("Emissions")
+          })
+            
+          # Create an interactive bar graph showing top 5 consumption sector in chosen year
+          output$top5consumption <- renderPlot({
+            ggplot(data = inventory2020, aes(x = sector, y = consumption)) + 
+            geom_col() + 
+            theme_classic() + 
+            xlab("Sector") + ylab("Consumption")
+          })
+          
 }
 
     
