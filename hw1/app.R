@@ -169,19 +169,18 @@ server <- function(input, output) {
               req(input$selected_year)
               ghg_inventory %>% 
                   select (year, sector, source, consumption) %>% 
-                  filter(year %in% input$selected_year)
-#              %>%
-#                  group_by(sector, year) %>%
-#                  mutate(sector_consumption = sum(consumption, na.rm = TRUE)) %>%
-#                  arrange(desc(sector_consumption)) %>% 
-#                  select (year, sector, sector_consumption)
+                  filter(year %in% input$selected_year) %>%
+                  group_by(sector, year) %>%
+                  mutate(sector_consumption = sum(consumption, na.rm = TRUE)) %>%
+                  arrange(desc(sector_consumption)) %>% 
+                  select (year, sector, sector_consumption)
             })
             
-#          consumption_selectedyear <- data.frame(unique(sectorconsumption_selectedyear))
+         consumption_selectedyear <- data.frame(unique(sectorconsumption_selectedyear))
           
-#          top5consumption <- consumption_selectedyear %>%
-#            arrange(desc(sector_consumption)) %>%
-#            top_n(sector_consumption, n = 5)
+         top5consumption <- consumption_selectedyear %>%
+            arrange(desc(sector_consumption)) %>%
+            top_n(sector_consumption, n = 5)
           
           
           
