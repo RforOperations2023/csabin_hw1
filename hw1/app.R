@@ -12,6 +12,7 @@
     library(readr)
     library(dplyr)
     library(ggplot2)
+    library(RColorBrewer)
     library(scales)
     
     
@@ -69,7 +70,7 @@ ui <- fluidPage(
         #### MAIN PANEL ####
         mainPanel(
            plotOutput("scatterplot"),
-           plotOutput("annual_emissions"),
+           plotOutput("annual_wastetons"),
            DT::dataTableOutput(outputId = "showdata")
            )
     )
@@ -81,6 +82,15 @@ server <- function(input, output) {
 
       # Create an interactive bar graph (user chooses y-axis: emissions or consumption)
         
+          # Reactive graph title
+            plot_title <- renderText({ 
+              if(input$y == "total_emissions"){
+                plot_title = "Total Annual Greenhouse Gas Emissions from Waste Sources"
+              } else if (input$y == "total_consumption"){
+                plot_title = "Total Annual Waste Consumption in Washington D.C."
+              }
+            })
+  
           # Reactive y-axis label
             yaxis_title <- reactive({
               req(input$y)
@@ -95,15 +105,19 @@ server <- function(input, output) {
             y_strings <- c("Greenhouse Gas Emissions (tons)" = "total_emissions",
                            "Waste Consumption (tons)" = "total_consumption")
   
-          # Plot
-            output$annual_emissions <- renderPlot({
-              ggplot(data = waste_tons, aes_string(x = "year", y = input$y)) + 
+          # Plot (annual emissions OR annual consumption ~ year)
+            output$annual_wastetons <- renderPlot({
+              ggplot(data = waste_tons, 
+                     aes_string(x = "year", y = input$y, fill = "source")) + 
                 geom_col() + 
+                ggtitle(req(plot_title())) +
                 labs(x = "Year", 
                      y = names(y_strings[which(y_strings == input$y)])) +
                 scale_y_continuous(labels = label_number(accuracy = .1, scale = 0.000001)) + 
+                scale_fill_brewer(palette = "Dark2") +
                 theme_classic() + 
-                theme(axis.text.x = element_text(angle = 90))
+                theme(axis.text.x = element_text(angle = 90)) + 
+                theme(plot.title = element_text(hjust = 0.5))
             })
       
             
