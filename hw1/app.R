@@ -67,8 +67,8 @@ ui <- fluidPage(
                         value = TRUE),
           
           # Input: allow user to select year for top sector analysis
-          checkboxGroupInput(inputId = "selected_year", label = "Year",
-                             choices = c("2006", "2007", "2008", "2009", "2010",
+          radioButtons(inputId = "selected_year", label = "Year",
+                       choices = c("2006", "2007", "2008", "2009", "2010",
                                          "2011", "2012", "2013", "2014", "2015",
                                          "2016", "2017", "2018", "2019", "2020", 
                                          "2021", "2022"),
@@ -165,31 +165,32 @@ server <- function(input, output) {
       
       
       # Create a reactive data frame for *consumption* that filters by selected year
-          sectorconsumption_selectedyear <- reactive({
+          top5consumption_selectedyear <- reactive({
               req(input$selected_year)
-              ghg_inventory %>% 
+              
+              consumption_selectedyear <- ghg_inventory %>% 
                   select (year, sector, source, consumption) %>% 
-                  filter(year %in% input$selected_year) %>%
+                  filter(year == input$selected_year) %>%
                   group_by(sector, year) %>%
                   mutate(sector_consumption = sum(consumption, na.rm = TRUE)) %>%
                   arrange(desc(sector_consumption)) %>% 
                   select (year, sector, sector_consumption)
+              
+              sectorconsumption_selectedyear <- data.frame(unique(consumption_selectedyear))
+              
+              top5consumption <- sectorconsumption_selectedyear() %>%
+                arrange(desc(sector_consumption)) %>%
+                top_n(sector_consumption, n = 5)
             })
             
-         consumption_selectedyear <- data.frame(unique(sectorconsumption_selectedyear))
-          
-         top5consumption <- consumption_selectedyear %>%
-            arrange(desc(sector_consumption)) %>%
-            top_n(sector_consumption, n = 5)
-          
-          
           
           # Create an interactive bar graph showing top 5 emissions sectors in chosen year
           output$top5emissions <- renderPlot({
-            ggplot(data = inventory2020, aes(x = sector, y = emissions)) + 
+            ggplot(data = top5consumption_selectedyear(), 
+                   aes(x = sector, y = sectorconsumption2020)) + 
             geom_col() + 
             theme_classic() + 
-            xlab("Sector") + ylab("Emissions")
+            xlab("Sector") + ylab("Consumption")
           })
             
           # Create an interactive bar graph showing top 5 consumption sector in chosen year
