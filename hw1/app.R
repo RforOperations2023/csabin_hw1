@@ -182,12 +182,6 @@ server <- function(input, output) {
                 top_n(sector_consumption, n = 5)
 
             })
-            
-          # Reactive graph title
-          year_plottitle <-  reactive({
-            req(input$selected_year)
-            print("Top Five Sectors with Highest /n Energy Consumption in" & input$selected_year)
-          })
           
           
           # Create an interactive bar graph showing top 5 consumption sectors in chosen year
@@ -195,7 +189,7 @@ server <- function(input, output) {
             ggplot(data = top5consumption_selectedyear(), 
                    aes(x = sector, y = sector_consumption)) + 
             geom_col() + 
-            ggtitle("Top Five Sectors with Highest /n Energy Consumption in") +
+            labs(title = paste0("Top Five Sectors with Highest\n Energy Consumption in ", input$selected_year)) +
             xlab("Sector") + ylab("Consumption") + 
             theme_classic() + 
             theme(plot.title = element_text(hjust = 0.5)) +
@@ -228,7 +222,7 @@ server <- function(input, output) {
             ggplot(data = top5emissions_selectedyear(), 
                    aes(x = sector, y = sector_emissions)) + 
             geom_col() + 
-            ggtitle("Top Five Sectors with Highest /n Greenhouse Gas Emissions in <YEAR>")+
+            labs(title = paste0("Top Five Sectors with Highest\n Greenhouse Gas Emissions in ", input$selected_year)) +
             xlab("Sector") + ylab("Emissions") + 
             theme_classic() + 
             theme(plot.title = element_text(hjust = 0.5)) +
