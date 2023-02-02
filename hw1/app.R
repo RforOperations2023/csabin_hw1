@@ -76,16 +76,22 @@ ui <- fluidPage(
             
         #### MAIN PANEL ####
         mainPanel(
-           fluidRow(
-             column(6, plotOutput("scatterplot")),
-             column(6, plotOutput("annual_wastetons"))
-             ),
-           fluidRow(
-             column(12, DT::dataTableOutput(outputId = "showdata"))
+          
+          # Output: Scatterplot 
+          fluidRow(
+             plotOutput("scatterplot"),
            ),
+          
+          # Output: single row with plot and data table (if shown)
            fluidRow(
-             column (6, plotOutput("top5emissions")),
-             column (6, plotOutput("top5consumption"))
+             column(7, plotOutput("annual_wastetons")),
+             column(5, DT::dataTableOutput(outputId = "showdata"))
+           ),
+          
+          # Output: tabset with emission and consumption bar graphs
+          tabsetPanel(type = "tabs",
+                      tabPanel("Emissions", plotOutput("top5emissions")),
+                      tabPanel("Consumption", plotOutput("top5consumption"))
            )
         )
     )
