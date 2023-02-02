@@ -16,9 +16,9 @@
     library(scales)
     
     
-    # Load data 
-#    ghg_inventory <- read_csv("~/csabin_hw1/hw1/Greenhouse_Gas_Inventory.csv")
+    # Load data from directory
      ghg_inventory <- read.csv("Greenhouse_Gas_Inventory.csv")
+     
     
 #### DATA MANIPULATION ####
 
@@ -278,8 +278,8 @@ server <- function(input, output) {
             filename = function() {
             paste('WasteData_', Sys.Date(), '.csv', sep='')
                },
-               content = function(contents) {
-                 write.csv(data, contents)
+               content = function(con) {
+                 write.csv(waste_tons, con)
                }
              )
       
