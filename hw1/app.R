@@ -49,7 +49,7 @@
 ui <- fluidPage(
 
     # Title of application
-    titlePanel("Washington D.C. Citywide Greenhouse Gas Emissions: 2006-2020"),
+    h1(titlePanel("Washington D.C. Citywide Greenhouse Gas Emissions: \n 2006-2020"), align = "center"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
@@ -78,7 +78,7 @@ ui <- fluidPage(
         mainPanel(
           
           # Output: single row with plot and data table (if shown)
-          textOutput("scatter_text"),
+          h3(textOutput("scatter_text"),align = "center"),
           br(),
           br(),
          
@@ -100,7 +100,7 @@ ui <- fluidPage(
           
           
           # Output: tabset with emission and consumption bar graphs
-          textOutput("tabset_text"),
+          h3(textOutput("tabset_text"), align = "center"),
           br(),
           
           tabsetPanel(type = "tabs",
