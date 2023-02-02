@@ -49,11 +49,13 @@
 ui <- fluidPage(
 
     # Title of application
-    h1(titlePanel("Washington D.C. Citywide Greenhouse Gas Emissions: \n 2006-2020"), align = "center"),
+    titlePanel(
+      h2("Washington D.C. Greenhouse Gas Emissions: 2006-2020", align = "center")
+      ),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
-        sidebarPanel("Change the displays by manipulating the settings below: ", 
+        sidebarPanel("Change the displays by toggling the settings below:", 
                      width = 3,
           
           # Input: allow user to choose "emission" or "consumption" for y-axis
@@ -71,7 +73,11 @@ ui <- fluidPage(
                        choices = c("2006", "2009", "2010","2011", "2012", 
                                    "2013", "2014", "2015","2016", "2017", 
                                    "2018", "2019", "2020"),
-                             selected = "2020")
+                             selected = "2020"),
+          
+          # Add note about missing years to sidebar panel
+          "*The years 2007 and 2008 are excluded as options due to insufficient data."
+          
         ),
             
         #### MAIN PANEL ####
@@ -87,17 +93,13 @@ ui <- fluidPage(
             column(5, DT::dataTableOutput(outputId = "showdata"))
           ),
           br(),
-          br(),
-          br(),
           
           # Output: Scatterplot 
           fluidRow(
              plotOutput("scatterplot"),
            ),
           br(),
-          br(),
-          br(),
-          
+          hr(),
           
           # Output: tabset with emission and consumption bar graphs
           h3(textOutput("tabset_text"), align = "center"),
@@ -165,7 +167,7 @@ server <- function(input, output) {
       # Create a scatterplot (total annual emissions ~ total annual consumption)
       output$scatterplot <- renderPlot({
         ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
-          geom_point() + 
+          geom_point(size = 2) + 
           geom_smooth(method = 'lm', se = FALSE, color = "#60A3D9") +
           labs(title ="Relationship between Waste Consumption and Greenhouse Gas Emissions",
                x = "Waste (tons)", y = "Emissions (tons)") + 
@@ -220,7 +222,7 @@ server <- function(input, output) {
             ggplot(data = top5consumption_selectedyear(), 
                    aes(x = sector, y = sector_consumption, fill = sector)) + 
             geom_col() + 
-            labs(title = paste0("Top Five Sectors with Highest\n Energy Consumption in ", input$selected_year)) +
+            labs(title = paste0("Top Five Sectors with Highest Energy Consumption in ", input$selected_year)) +
             xlab("Sector") + ylab("Consumption (billions of tons)") + 
             scale_y_continuous(labels = label_number(scale = 0.000000001)) + 
             scale_fill_brewer(palette = "Set2") +
@@ -256,7 +258,7 @@ server <- function(input, output) {
             ggplot(data = top5emissions_selectedyear(), 
                    aes(x = sector, y = sector_emissions, fill = sector)) + 
             geom_col() + 
-            labs(title = paste0("Top Five Sectors with Highest\n Greenhouse Gas Emissions in ", input$selected_year)) +
+            labs(title = paste0("Top Five Sectors with Highest Greenhouse Gas Emissions in ", input$selected_year)) +
             xlab("Sector") + ylab("Emissions (millions of tons)") + 
             scale_y_continuous(labels = label_number(scale = 0.000001)) + 
             scale_fill_brewer(palette = "Set1") +
