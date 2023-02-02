@@ -77,21 +77,32 @@ ui <- fluidPage(
         #### MAIN PANEL ####
         mainPanel(
           
-          # Output: Scatterplot 
+          # Output: single row with plot and data table (if shown)
           textOutput("scatter_text"),
+          br(),
+          br(),
+         
+          fluidRow(
+            column(7, plotOutput("annual_wastetons")),
+            column(5, DT::dataTableOutput(outputId = "showdata"))
+          ),
+          br(),
+          br(),
+          br(),
+          
+          # Output: Scatterplot 
           fluidRow(
              plotOutput("scatterplot"),
            ),
+          br(),
+          br(),
+          br(),
           
-          
-          # Output: single row with plot and data table (if shown)
-          
-          fluidRow(
-             column(7, plotOutput("annual_wastetons")),
-             column(5, DT::dataTableOutput(outputId = "showdata"))
-           ),
           
           # Output: tabset with emission and consumption bar graphs
+          textOutput("tabset_text"),
+          br(),
+          
           tabsetPanel(type = "tabs",
                       tabPanel("Emissions", plotOutput("top5emissions")),
                       tabPanel("Consumption", plotOutput("top5consumption"))
@@ -156,7 +167,7 @@ server <- function(input, output) {
         ggplot(data = waste_tons, aes(x = total_consumption, y = total_emissions)) + 
           geom_point() + 
           geom_smooth(method = 'lm', se = FALSE, color = "#60A3D9") +
-          labs(title ="Relationship between Waste Consumption \n and Greenhouse Gas Emissions",
+          labs(title ="Relationship between Waste Consumption and Greenhouse Gas Emissions",
                x = "Waste (tons)", y = "Emissions (tons)") + 
           scale_x_continuous(labels = label_comma(), limits = c(750000,925000)) +
           scale_y_continuous(labels = label_comma(), limits = c(150000,500000)) +
@@ -174,6 +185,12 @@ server <- function(input, output) {
                                   options = list(pageLength = 5),
                                   rownames = FALSE)
           }
+      )
+      
+      
+      # Create text to be shown above emission and consumption tabs in App interface
+      output$tabset_text <- renderText(
+        print("Annual Greenhouse Gas Emissions and Consumption \n Originating from Any Sector")
       )
       
       
