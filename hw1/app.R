@@ -78,12 +78,15 @@ ui <- fluidPage(
         mainPanel(
           
           # Output: Scatterplot 
+          textOutput("scatter_text"),
           fluidRow(
              plotOutput("scatterplot"),
            ),
           
+          
           # Output: single row with plot and data table (if shown)
-           fluidRow(
+          
+          fluidRow(
              column(7, plotOutput("annual_wastetons")),
              column(5, DT::dataTableOutput(outputId = "showdata"))
            ),
@@ -141,7 +144,12 @@ server <- function(input, output) {
                 theme(plot.title = element_text(hjust = 0.5)) + 
                 theme(legend.position = "bottom")
             })
-      
+        
+            # Create text to be shown above graph in App interface
+            
+            output$scatter_text <- renderText(
+              print("Annual Greenhouse Gas Emissions and Consumption \n Originating from Waste Sources")
+            )
             
       # Create a scatterplot (total annual emissions ~ total annual consumption)
       output$scatterplot <- renderPlot({
@@ -241,6 +249,8 @@ server <- function(input, output) {
             theme(legend.position = "none")
           })
           
+          
+      
 }
 
     
