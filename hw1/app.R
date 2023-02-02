@@ -92,6 +92,11 @@ ui <- fluidPage(
             column(7, plotOutput("annual_wastetons")),
             column(5, DT::dataTableOutput(outputId = "showdata"))
           ),
+          
+          # Create download button
+          downloadButton('downloadData', 'Download', width = 4),
+          br(),
+          br(),
           br(),
           
           # Output: Scatterplot 
@@ -268,7 +273,15 @@ server <- function(input, output) {
             theme(legend.position = "none")
           })
           
-          
+     # Create a download button
+          output$downloadData <- downloadHandler(
+            filename = function() {
+            paste('WasteData_', Sys.Date(), '.csv', sep='')
+               },
+               content = function(contents) {
+                 write.csv(data, contents)
+               }
+             )
       
 }
 
