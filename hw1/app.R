@@ -190,7 +190,8 @@ server <- function(input, output) {
                    aes(x = sector, y = sector_consumption)) + 
             geom_col() + 
             labs(title = paste0("Top Five Sectors with Highest\n Energy Consumption in ", input$selected_year)) +
-            xlab("Sector") + ylab("Consumption") + 
+            xlab("Sector") + ylab("Consumption (billions of tons)") + 
+            scale_y_continuous(labels = label_number(scale = 0.000000001)) + 
             theme_classic() + 
             theme(plot.title = element_text(hjust = 0.5)) +
             theme(axis.text.x = element_text(angle = 90))
@@ -223,7 +224,8 @@ server <- function(input, output) {
                    aes(x = sector, y = sector_emissions)) + 
             geom_col() + 
             labs(title = paste0("Top Five Sectors with Highest\n Greenhouse Gas Emissions in ", input$selected_year)) +
-            xlab("Sector") + ylab("Emissions") + 
+            xlab("Sector") + ylab("Emissions (millions of tons)") + 
+            scale_y_continuous(labels = label_number(scale = 0.000001)) + 
             theme_classic() + 
             theme(plot.title = element_text(hjust = 0.5)) +
             theme(axis.text.x = element_text(angle = 90))
