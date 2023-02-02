@@ -189,8 +189,11 @@ server <- function(input, output) {
             ggplot(data = top5consumption_selectedyear(), 
                    aes(x = sector, y = sector_consumption)) + 
             geom_col() + 
+            ggtitle("Top Five SEctors Consuming Energy in <YEAR>") +
+            xlab("Sector") + ylab("Consumption") + 
             theme_classic() + 
-            xlab("Sector") + ylab("Consumption")  
+            theme(plot.title = element_text(hjust = 0.5)) +
+            theme(axis.text.x = element_text(angle = 90))
             })
             
           
@@ -219,8 +222,11 @@ server <- function(input, output) {
             ggplot(data = top5emissions_selectedyear(), 
                    aes(x = sector, y = sector_emissions)) + 
             geom_col() + 
+            ggtitle("Top Five Sectors with Highest Greenhouse Gas Emissions in <YEAR>")+
+            xlab("Sector") + ylab("Emissions") + 
             theme_classic() + 
-            xlab("Sector") + ylab("Emissions")
+            theme(plot.title = element_text(hjust = 0.5)) +
+            theme(axis.text.x = element_text(angle = 90))
           })
           
 }
