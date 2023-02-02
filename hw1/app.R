@@ -187,14 +187,16 @@ server <- function(input, output) {
           # Create an interactive bar graph showing top 5 consumption sectors in chosen year
           output$top5consumption <- renderPlot({
             ggplot(data = top5consumption_selectedyear(), 
-                   aes(x = sector, y = sector_consumption)) + 
+                   aes(x = sector, y = sector_consumption, fill = sector)) + 
             geom_col() + 
             labs(title = paste0("Top Five Sectors with Highest\n Energy Consumption in ", input$selected_year)) +
             xlab("Sector") + ylab("Consumption (billions of tons)") + 
             scale_y_continuous(labels = label_number(scale = 0.000000001)) + 
+            scale_fill_brewer(palette = "Set2") +
             theme_classic() + 
             theme(plot.title = element_text(hjust = 0.5)) +
-            theme(axis.text.x = element_text(angle = 90))
+            theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
+            theme(legend.position = "none")
             })
             
           
@@ -221,14 +223,16 @@ server <- function(input, output) {
           # Create an interactive bar graph showing top 5 emissions sectors in chosen year
           output$top5emissions <- renderPlot({
             ggplot(data = top5emissions_selectedyear(), 
-                   aes(x = sector, y = sector_emissions)) + 
+                   aes(x = sector, y = sector_emissions, fill = sector)) + 
             geom_col() + 
             labs(title = paste0("Top Five Sectors with Highest\n Greenhouse Gas Emissions in ", input$selected_year)) +
             xlab("Sector") + ylab("Emissions (millions of tons)") + 
             scale_y_continuous(labels = label_number(scale = 0.000001)) + 
+            scale_fill_brewer(palette = "Set1") +
             theme_classic() + 
             theme(plot.title = element_text(hjust = 0.5)) +
-            theme(axis.text.x = element_text(angle = 90))
+            theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
+            theme(legend.position = "none")
           })
           
 }
