@@ -17,8 +17,8 @@
     
     
     # Load data 
-    ghg_inventory <- read_csv("~/csabin_hw1/hw1/Greenhouse_Gas_Inventory.csv")
-
+#    ghg_inventory <- read_csv("~/csabin_hw1/hw1/Greenhouse_Gas_Inventory.csv")
+     ghg_inventory <- read.csv("Greenhouse_Gas_Inventory.csv")
     
 #### DATA MANIPULATION ####
 
