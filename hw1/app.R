@@ -68,11 +68,10 @@ ui <- fluidPage(
           
           # Input: allow user to select year for top sector analysis
           radioButtons(inputId = "selected_year", label = "Year",
-                       choices = c("2006", "2007", "2008", "2009", "2010",
-                                         "2011", "2012", "2013", "2014", "2015",
-                                         "2016", "2017", "2018", "2019", "2020", 
-                                         "2021", "2022"),
-                             selected = "2022")
+                       choices = c("2006", "2009", "2010","2011", "2012", 
+                                   "2013", "2014", "2015","2016", "2017", 
+                                   "2018", "2019", "2020"),
+                             selected = "2020")
         ),
             
         #### MAIN PANEL ####
@@ -200,10 +199,10 @@ server <- function(input, output) {
             req(input$selected_year)
             
             emissions_selectedyear <- ghg_inventory %>% 
-              select (year, sector, source, emission) %>% 
+              select (year, sector, source, emissions) %>% 
               filter(year == input$selected_year) %>%
               group_by(sector, year) %>%
-              mutate(sector_emissions = sum(emission, na.rm = TRUE)) %>%
+              mutate(sector_emissions = sum(emissions, na.rm = TRUE)) %>%
               arrange(desc(sector_emissions)) %>% 
               select (year, sector, sector_emissions)
             
