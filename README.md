@@ -19,6 +19,8 @@ The collection of this data was the result of an initiative by the Department of
 
 The raw data can be found here: [Open Data DC: Greenhouse Gas Inventory](https://opendata.dc.gov/datasets/DCGIS::greenhouse-gas-inventory/about)
 
+Learn more about the DOEE's emission goals here: [DOEE Greenhouse Gas Inventories](https://doee.dc.gov/service/greenhouse-gas-inventories)
+
 ## R Shiny App
 
 I created a web application using R Shiny to depict certain facets of this greenhouse gas inventory data. 
